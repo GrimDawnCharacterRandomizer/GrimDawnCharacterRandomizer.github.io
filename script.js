@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error("Failed to load character data:", error);
             resultContainer.innerHTML = '<p style="color: red;">Failed to load character data. Please refresh the page.</p>';
-            resultContainer.style.display = 'block';
+    
         }
     }
 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         weaponTypeEl.textContent = sWeapon;
 
-        resultContainer.style.display = 'block';
+
     }
 
     generateBtn.addEventListener('click', generateCharacter);

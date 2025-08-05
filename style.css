@@ -80,7 +80,7 @@ button:active {
     padding: 20px;
     border-radius: 8px;
     text-align: left;
-    min-height: 150px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
