@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function displayResult(sClass, sAbilities, sWeapon) {
-        classNameEl.textContent = sClass.className;
+        classNameEl.textContent = `${sClass.className} (${sClass.masteries.join(', ')})`;
 
         abilitiesListEl.innerHTML = '';
         if (sAbilities.length > 0) {
