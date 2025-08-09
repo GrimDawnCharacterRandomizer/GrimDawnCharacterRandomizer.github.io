@@ -26,19 +26,6 @@ body {
     align-items: center;
 }
 
-.side-ad {
-    width: 160px;
-    height: 300px;
-    margin: 0 60px;
-}
-
-.ad-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
     background-color: #2c2c2c;
     padding: 30px 40px;
