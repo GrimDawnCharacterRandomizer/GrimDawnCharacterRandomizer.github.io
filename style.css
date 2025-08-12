@@ -41,9 +41,9 @@ body {
 }
 
 h1 {
-    color: #66bb6a; /* Green */
+    color: #66bb6a;
     margin-bottom: 30px;
-    font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 4vw, 2rem);
     line-height: 1.2;
 }
 
@@ -58,7 +58,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     margin-bottom: 30px;
-    min-height: 48px; /* Touch target minimum size */
+    min-height: 48px;
 }
 
 button:hover {
@@ -74,10 +74,10 @@ button:active {
     padding: 20px;
     border-radius: 8px;
     text-align: left;
-    min-height: 200px; /* Reduced for mobile */
+    min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changed from center to flex-start */
+    justify-content: flex-start;
     align-items: flex-start;
     position: relative;
     width: 100%;
@@ -176,13 +176,12 @@ li {
     background-color: #5a5a5a;
 }
 
-/* Mobile Portrait Orientation - Primary Fix */
 @media (max-width: 768px) and (orientation: portrait) {
     body {
         padding: 10px;
         min-height: 100vh;
         justify-content: flex-start;
-        font-size: 16px; /* Prevent zoom on iOS */
+        font-size: 16px;
     }
     
     .main-wrapper {
@@ -218,7 +217,7 @@ li {
     .result-item {
         margin-bottom: 18px;
         width: 100%;
-        padding-right: 40px;
+        padding-right: 0;
     }
     
     .result-label {
@@ -242,8 +241,11 @@ li {
         height: 28px !important;
         padding: 4px !important;
         font-size: 12px !important;
-        right: 8px !important;
-        top: 0px !important;
+        /* Remove absolute positioning - keep it in normal flow */
+        position: static !important;
+        right: auto !important;
+        top: auto !important;
+        margin-left: 10px !important;
         min-width: 28px !important;
         min-height: 28px !important;
         max-width: 28px !important;
@@ -284,7 +286,7 @@ li {
     
     .result-item {
         margin-bottom: 15px;
-        padding-right: 35px;
+        padding-right: 0; /* Remove padding that was causing overflow */
     }
     
     .result-label {
@@ -305,8 +307,10 @@ li {
         height: 24px !important;
         padding: 3px !important;
         font-size: 11px !important;
-        right: 5px !important;
-        top: 0px !important;
+        position: static !important;
+        right: auto !important;
+        top: auto !important;
+        margin-left: 10px !important;
         min-width: 24px !important;
         min-height: 24px !important;
         max-width: 24px !important;
@@ -360,7 +364,7 @@ li {
     .result-item {
         margin-bottom: 12px;
         width: 100%;
-        padding-right: 40px;
+        padding-right: 0;
     }
     
     .reroll-button {
@@ -368,8 +372,10 @@ li {
         height: 28px !important;
         padding: 4px !important;
         font-size: 12px !important;
-        right: 8px !important;
-        top: 0px !important;
+        position: static !important;
+        right: auto !important;
+        top: auto !important;
+        margin-left: 10px !important;
         min-width: 28px !important;
         min-height: 28px !important;
         max-width: 28px !important;
@@ -405,7 +411,7 @@ li {
     
     .result-item {
         margin-bottom: 12px;
-        padding-right: 33px;
+        padding-right: 0;
     }
     
     .result-label {
@@ -422,12 +428,14 @@ li {
     }
     
     .reroll-button {
-        width: 22px;
-        height: 22px;
-        padding: 2px;
-        font-size: 10px;
-        right: calc(100% + 3px);
-        top: 0px;
+        position: static !important; /* Change from absolute */
+        right: auto !important;
+        top: auto !important;
+        width: 22px !important;
+        height: 22px !important;
+        padding: 2px !important;
+        font-size: 10px !important;
+        margin-left: 10px !important;
     }
 }
 
@@ -436,17 +444,21 @@ li {
     /* No specific high-res styles needed for this design */
 }
 
+/* Mobile positioning override - this was the missing piece from your original CSS */
 @media (max-width: 768px) {
     .result-item {
         display: block;
         position: relative;
-        padding-right: 45px;
+        padding-right: 0; /* Changed from 45px to 0 */
     }
 
     .reroll-button {
-        position: absolute;
-        right: 8px;
-        top: 0px;
-        margin-left: 0;
+        position: static !important; /* Changed from absolute to static */
+        right: auto !important;
+        top: auto !important;
+        margin-left: 10px;
+        display: inline-flex;
+        vertical-align: top;
+        float: right;
     }
 }
