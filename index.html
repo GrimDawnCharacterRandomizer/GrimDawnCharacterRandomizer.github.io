@@ -1,51 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: #2a2a2a !important;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-4167298152172606">
-    <title>Grim Dawn Character Randomizer</title>
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
+    <title>Site Moved - Redirecting...</title>
+    <meta http-equiv="refresh" content="5;url=https://enigmamachinerandomizerhub.netlify.app/">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            background: #2a2a2a !important;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+            color: #5a9f5a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: #3a3a3a;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #4a4a4a;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #5a9f5a;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #5a9f5a;
+        }
+        
+        .redirect-link {
+            display: inline-block;
+            background: #4a4a4a;
+            color: #5a9f5a;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            border: 2px solid #5a9f5a;
+        }
+        
+        .redirect-link:hover {
+            background: #5a9f5a;
+            color: #2a2a2a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .countdown {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 30px 0;
+            color: #5a9f5a;
+        }
+        
+        .spinner {
+            border: 4px solid #4a4a4a;
+            border-radius: 50%;
+            border-top: 4px solid #5a9f5a;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .explanation {
+            background: #3a3a3a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 1em;
+            line-height: 1.5;
+            border: 1px solid #4a4a4a;
+        }
+        
+        h3 {
+            color: #5a9f5a;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    </div>
-        <div class="content-wrapper">
-            <div class="container">
-                <h1>Grim Dawn Character Randomizer</h1>
-                <button id="generate-btn">Generate Character</button>
-                <div id="result-container" class="result-container">
-                    <div class="result-item">
-                        <div class="result-text-content">
-                            <span class="result-label">Class:</span>
-                            <span id="class-name" class="result-value"></span>
-                        </div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-text-content">
-                            <span class="result-label">Focus Abilities:</span>
-                            <ul id="abilities-list" class="result-value"></ul>
-                        </div>
-                        <button id="reroll-abilities-btn" class="reroll-button">↻</button>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-text-content">
-                            <span class="result-label">Weapon:</span>
-                            <span id="weapon-type" class="result-value"></span>
-                        </div>
-                        <button id="reroll-weapon-btn" class="reroll-button">↻</button>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="coffee-link">
-                    <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
-                        ☕ Buy me a coffee
-                    </a>
-                </div>
-            </div>
+    <div class="container">
+        <h1>🔄 Site Moved!</h1>
+        
+        <div class="spinner"></div>
+        
+        <p><strong>You are being redirected to my new website...</strong></p>
+        
+        <div class="countdown" id="countdown">Redirecting in 5 seconds...</div>
+        
+        <p>If you are not automatically redirected, please click the link below:</p>
+        
+        <a href="https://enigmamachinerandomizerhub.netlify.app/" class="redirect-link">
+            Go to New Website →
+        </a>
+        
+        <div class="explanation">
+            <h3>📍 What's Changed?</h3>
+            <p>I've consolidated all of my randomizers into one central location on Netlify instead of GitHub Pages.</p>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Countdown timer
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            if (seconds > 0) {
+                countdownElement.textContent = `Redirecting in ${seconds} second${seconds !== 1 ? 's' : ''}...`;
+            } else {
+                countdownElement.textContent = 'Redirecting now...';
+                clearInterval(countdown);
+                // Fallback redirect in case meta refresh doesn't work
+                window.location.href = 'https://enigmamachinerandomizerhub.netlify.app/';
+            }
+        }, 1000);
+        
+        // Immediate redirect attempt (backup)
+        setTimeout(() => {
+            window.location.href = 'https://enigmamachinerandomizerhub.netlify.app/';
+        }, 5000);
+    </script>
 </body>
 </html>
